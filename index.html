@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dashboard de Eventos Premium em Portugal</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="hero">
+      <div>
+        <p class="eyebrow">Portugal Premium Experience</p>
+        <h1>Dashboard Automática de Eventos</h1>
+        <p class="subtitle">
+          Concertos premium, futebol, corridas e eventos tech (Web Summit style),
+          pesquisados automaticamente para só teres de abrir o site e acompanhar.
+        </p>
+      </div>
+      <div class="hero-stats" id="heroStats"></div>
+    </header>
+
+    <main class="dashboard">
+      <section class="card">
+        <div class="section-title">
+          <h2>Categorias de Eventos</h2>
+          <span id="activeCategoryCount" class="tag"></span>
+        </div>
+
+        <div id="categoryTabs" class="tabs" role="tablist" aria-label="Categorias"></div>
+
+        <div id="eventsGrid" class="grid"></div>
+
+        <div class="actions-row">
+          <button id="loadMoreBtn" class="load-more" type="button">Ver mais eventos</button>
+        </div>
+      </section>
+
+      <section class="card highlights">
+        <h2>Destaques Rápidos</h2>
+        <ul id="highlightsList"></ul>
+      </section>
+    </main>
+
+    <footer>
+      <p>
+        Dashboard com pesquisa automática online (com fallback local). Confirma sempre
+        datas, bilhetes e horários nas entidades oficiais.
+      </p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
